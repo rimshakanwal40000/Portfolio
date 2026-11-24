@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rimsha Kanwal — Executive Portfolio</title>
+
+  <!-- Fonts: Plus Jakarta Sans (Glonto Style) for Headings & Poppins for Body Text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome for Minimal Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="white-theme">
+
+  <!-- ================= TOP HEADER / NAVBAR ================= -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+
+      <!-- Brand Logo with Crisp Vector SVG Monogram -->
+      <a href="#hero" class="brand-logo" aria-label="Rimsha Kanwal">
+        <span class="logo-mark">
+          <svg class="brand-svg" viewBox="687 574 1127 1355" fill="currentColor" shape-rendering="geometricPrecision">
+            <path d="M 1163 1368 L 1085 1383 L 1074 1383 L 1055 1387 L 1026 1389 L 1021 1391 L 1002 1391 L 981 1394 L 969 1394 L 967 1396 L 967 1708 L 969 1836 L 1165 1836 L 1167 1833 L 1165 1758 Z" />
+            <path d="M 1516 1163 L 1490 1197 L 1456 1232 L 1392 1280 L 1308 1323 L 1216 1355 L 1215 1545 L 1478 1835 L 1721 1836 L 1721 1831 L 1389 1489 L 1390 1485 L 1450 1455 L 1503 1420 L 1535 1395 L 1582 1351 L 1623 1303 L 1659 1251 L 1684 1205 L 1700 1167 L 1698 1163 Z" />
+            <path d="M 1157 842 L 1153 843 L 1116 840 L 1080 843 L 1065 847 L 1057 847 L 1035 855 L 1027 856 L 1001 867 L 976 880 L 965 888 L 967 1324 L 970 1326 L 982 1324 L 999 1324 L 1024 1320 L 1039 1320 L 1057 1316 L 1069 1316 L 1079 1313 L 1117 1308 L 1125 1305 L 1160 1299 L 1163 1296 L 1160 925 L 1161 899 L 1160 844 Z" />
+            <path d="M 780 1011 L 781 1018 L 812 965 L 848 918 L 902 867 L 958 828 L 1032 793 L 1104 772 L 1162 764 L 1215 764 L 1276 773 L 1344 795 L 1405 828 L 1436 853 L 1479 902 L 1503 949 L 1519 1014 L 1520 1068 L 1712 1068 L 1715 1057 L 1712 978 L 1700 922 L 1675 863 L 1631 801 L 1574 751 L 1524 720 L 1487 703 L 1411 679 L 1325 667 L 1253 667 L 1210 671 L 1123 687 L 1037 716 L 967 753 L 906 800 L 848 865 L 807 935 Z" />
+          </svg>
+        </span>
+        <span class="logo-name">Rimsha Kanwal</span>
+      </a>
+
+      <!-- Minimal Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link active">Index</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Pill, CV Download & Mobile Toggle -->
+      <div class="header-actions">
+        <a href="Rimsha-Kanwal-CV.pdf" target="_blank" download="Rimsha-Kanwal-CV.pdf" class="header-cv-btn" title="Download CV (PDF)">
+          <i class="fa-solid fa-arrow-down-to-line"></i>
+          <span>CV</span>
+        </a>
+        <a href="mailto:rimshark736@gmail.com" class="header-cta">Let's Talk</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open Navigation">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer Overlay Backdrop -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+
+    <!-- Awwwards Fullscreen Drawer Navigation -->
+    <aside class="nav-drawer" id="navDrawer" aria-hidden="true">
+      <div class="drawer-header">
+        <span class="drawer-meta-tag">Navigation</span>
+        <button class="drawer-close" id="drawerClose" aria-label="Close Navigation">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <nav class="drawer-menu">
+        <a href="#hero" class="drawer-link active"><span>01</span><b>Index</b></a>
+        <a href="#about" class="drawer-link"><span>02</span><b>About Us</b></a>
+        <a href="#experience" class="drawer-link"><span>03</span><b>Experience</b></a>
+        <a href="#skills" class="drawer-link"><span>04</span><b>Skills</b></a>
+        <a href="#contact" class="drawer-link"><span>05</span><b>Contact</b></a>
+      </nav>
+
+      <div class="drawer-footer">
+        <a href="Rimsha-Kanwal-CV.pdf" target="_blank" download="Rimsha-Kanwal-CV.pdf" class="drawer-cv-btn">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Download CV (PDF)</span>
+        </a>
+        <p class="drawer-contact-label">Get in Touch</p>
+        <a href="mailto:rimshark736@gmail.com" class="drawer-email">rimshark736@gmail.com</a>
+        <p class="drawer-location">Karachi, Pakistan</p>
+      </div>
+    </aside>
+  </header>
+
+  <!-- ================= HERO SECTION (AWWWARDS EDITORIAL STYLE) ================= -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-container">
+
+      <!-- Editorial Top Metadata -->
+      <div class="hero-meta reveal-up">
+        <div class="meta-item">
+          <span class="meta-label">Location</span>
+          <span class="meta-val">Karachi, Pakistan</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Discipline</span>
+          <span class="meta-val">BBA / HR Executive</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Available For</span>
+          <span class="meta-val">Corporate Roles & Internships</span>
+        </div>
+      </div>
+
+      <!-- Main Glonto-Style Display Headline -->
+      <div class="hero-headline-wrap reveal-up">
+        <h1 class="hero-title">
+          <span>Rimsha</span>
+          <span>Kanwal</span>
+        </h1>
+        <p class="hero-subtext">
+          Business Administration professional specialized in human resource management,
+          operational support, and structured organizational communication.
+        </p>
+
+        <!-- Call to Action Buttons: Download CV & Explore -->
+        <div class="hero-cta-group">
+          <a href="Rimsha-Kanwal-CV.pdf" target="_blank" download="Rimsha-Kanwal-CV.pdf" class="btn-cv-download">
+            <i class="fa-solid fa-file-arrow-down"></i>
+            <span>Download CV</span>
+          </a>
+          <a href="#about" class="btn-hero-more">
+            <span>Explore Profile</span>
+            <i class="fa-solid fa-arrow-down-long"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Bottom Bar -->
+      <div class="hero-bottom-bar reveal-up">
+        <a href="#about" class="scroll-down-btn">
+          <span>Scroll to explore</span>
+          <i class="fa-solid fa-arrow-down-long"></i>
+        </a>
+        <div class="hero-edition-tag">
+          <span>Edition 2026</span>
+          <span class="divider">/</span>
+          <span>Personal Portfolio</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ABOUT US / ABOUT ME SECTION ================= -->
+  <section class="section about-section" id="about">
+    <div class="container">
+
+      <div class="section-label-row reveal-up">
+        <span class="section-num">01</span>
+        <span class="section-tag-name">About Us & Profile</span>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- Quick Profile Highlights (Prominently displayed in About Us on Mobile) -->
+      <div class="about-meta-row reveal-up">
+        <div class="about-meta-pill">
+          <span class="amp-label">Location</span>
+          <span class="amp-val">Karachi, Pakistan</span>
+        </div>
+        <div class="about-meta-pill">
+          <span class="amp-label">Discipline</span>
+          <span class="amp-val">BBA / HR Executive</span>
+        </div>
+        <div class="about-meta-pill">
+          <span class="amp-label">Available For</span>
+          <span class="amp-val">Corporate Roles & Internships</span>
+        </div>
+      </div>
+
+      <div class="about-hero-grid reveal-up">
+        <h2 class="editorial-heading">
+          Driven by structured execution, people management, and continuous learning.
+        </h2>
+        <div class="objective-box">
+          <span class="box-caption">Career Objective</span>
+          <p class="objective-quote">
+            "I want to gain practical experience in my field and improve skills through a job at your company.
+            I aim to gain new experiences that will help me build a strong foundation for my future career."
+          </p>
+          <div class="objective-footer">
+            <div class="author-signature">— Rimsha Kanwal</div>
+            <a href="Rimsha-Kanwal-CV.pdf" target="_blank" download="Rimsha-Kanwal-CV.pdf" class="btn-cv-subtle">
+              <i class="fa-solid fa-file-pdf"></i>
+              <span>Download CV (PDF)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detail Columns: Education, Certification & Languages -->
+      <div class="about-columns-grid">
+
+        <!-- Education Column -->
+        <div class="about-col reveal-up">
+          <div class="col-head">
+            <h3 class="col-title">Education History</h3>
+            <span class="col-count">03 Degrees</span>
+          </div>
+
+          <div class="edu-list">
+
+            <div class="edu-entry">
+              <div class="edu-top">
+                <h4 class="edu-degree">Bachelor of Business Administration (BBA)</h4>
+                <span class="edu-status">In Progress</span>
+              </div>
+              <p class="edu-school">Iqra University, Karachi</p>
+              <p class="edu-summary">
+                Specializing in management concepts, organizational leadership, marketing strategies, and financial
+                management.
+              </p>
+            </div>
+
+            <div class="edu-entry">
+              <div class="edu-top">
+                <h4 class="edu-degree">Intermediate (Science)</h4>
+                <span class="edu-status">Completed</span>
+              </div>
+              <p class="edu-school">Board of Intermediate Education, Karachi</p>
+              <p class="edu-summary">
+                Rigorous training in quantitative reasoning, analytical thinking, and scientific disciplines.
+              </p>
+            </div>
+
+            <div class="edu-entry">
+              <div class="edu-top">
+                <h4 class="edu-degree">Matriculation (Science)</h4>
+                <span class="edu-status">Completed</span>
+              </div>
+              <p class="edu-school">Board of Secondary Education, Karachi</p>
+              <p class="edu-summary">
+                Foundation in general sciences, mathematics, and academic excellence with high discipline.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Certification & Skills Column -->
+        <div class="about-col reveal-up">
+          <div class="col-head">
+            <h3 class="col-title">Certification & Languages</h3>
+            <span class="col-count">Credentials</span>
+          </div>
+
+          <div class="credential-box">
+            <div class="credential-header">
+              <span class="cred-tag">Course Certification</span>
+              <h4 class="cred-title">Office Automation</h4>
+              <p class="cred-issuer">Aptech Computer Education</p>
+            </div>
+            <p class="cred-details">
+              Comprehensive professional training covering advanced computer operations, digital document workflow,
+              spreadsheet computation, and presentation standards.
+            </p>
+          </div>
+
+          <!-- Spoken Languages -->
+          <div class="languages-wrap">
+            <h4 class="sub-block-title">Languages Known</h4>
+            <div class="lang-row">
+              <div class="lang-card">
+                <span class="lang-title">English</span>
+                <span class="lang-subtitle">Professional Working Proficiency</span>
+              </div>
+              <div class="lang-card">
+                <span class="lang-title">Urdu</span>
+                <span class="lang-subtitle">Native Language / Fluent</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Principles -->
+          <div class="principles-wrap">
+            <h4 class="sub-block-title">Core Competencies</h4>
+            <div class="principle-items">
+              <div class="principle-item">
+                <span class="p-num">01</span>
+                <p>Exceptional client coordination and empathetic problem resolution.</p>
+              </div>
+              <div class="principle-item">
+                <span class="p-num">02</span>
+                <p>Target-oriented mindset with high poise under pressing deadlines.</p>
+              </div>
+              <div class="principle-item">
+                <span class="p-num">03</span>
+                <p>Systematic data entry, file auditing, and confidential documentation.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= PROFESSIONAL EXPERIENCE SECTION ================= -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+
+      <div class="section-label-row reveal-up">
+        <span class="section-num">02</span>
+        <span class="section-tag-name">Professional Experience</span>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="experience-intro reveal-up">
+        <h2 class="editorial-heading">Work Experience & Corporate Track Record</h2>
+        <p class="lead-text">Practical hands-on background in banking operations and talent administration.</p>
+      </div>
+
+      <div class="experience-items">
+
+        <!-- Experience 1: Bank Al Habib -->
+        <article class="exp-row reveal-up">
+          <div class="exp-left">
+            <span class="exp-period">21 Jan 2026 — 24 Mar 2026</span>
+            <h3 class="exp-company">Bank Al Habib Limited</h3>
+            <span class="exp-role-badge">Internship</span>
+          </div>
+
+          <div class="exp-right">
+            <h4 class="exp-position">Operations & Customer Relations Intern</h4>
+            <ul class="duties-list">
+              <li>Assisted with daily banking operations, teller transactions, and high-standard customer interactions.
+              </li>
+              <li>Handled end-to-end account opening processes and guided patrons through required documentation.</li>
+              <li>Supported cash handling, ledger verification, and transaction processing under senior supervision.
+              </li>
+              <li>Managed document archives, record filing, and precision database entries.</li>
+              <li>Worked collaboratively across multi-departmental teams in a fast-paced corporate environment.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Experience 2: The Educators -->
+        <article class="exp-row reveal-up">
+          <div class="exp-left">
+            <span class="exp-period">Professional Role</span>
+            <h3 class="exp-company">The Educators</h3>
+            <span class="exp-role-badge">Human Resources</span>
+          </div>
+
+          <div class="exp-right">
+            <h4 class="exp-position">HR Executive</h4>
+            <ul class="duties-list">
+              <li>Managed recruitment lifecycle: published job vacancies, shortlisted CVs, conducted screening
+                interviews, and finalized candidate selections.</li>
+              <li>Directed full onboarding procedures, document collection, verification, and personnel file
+                preparation.</li>
+              <li>Drafted official HR correspondence, employee notices, offer letters, and policy memorandums.</li>
+              <li>Supported payroll operations by compiling, verifying, and reporting accurate staff attendance data.
+              </li>
+              <li>Maintained confidential HR databases ensuring complete operational compliance.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SKILLS SECTION ================= -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+
+      <div class="section-label-row reveal-up">
+        <span class="section-num">03</span>
+        <span class="section-tag-name">Expertise & Capabilities</span>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-intro reveal-up">
+        <h2 class="editorial-heading">Core Skills & Competencies</h2>
+        <p class="lead-text">Practical tools, behavioral strengths, and administrative proficiencies.</p>
+      </div>
+
+      <div class="skills-editorial-grid">
+
+        <div class="skill-tile reveal-up">
+          <span class="skill-num">01</span>
+          <h3 class="skill-name">MS Office Suite</h3>
+          <p class="skill-meta">Word, Excel & PowerPoint</p>
+          <p class="skill-details">
+            Advanced formatting in Word, spreadsheet data management & formulas in Excel, and professional presentation
+            decks in PowerPoint.
+          </p>
+          <div class="skill-meter"><span style="width: 90%;"></span></div>
+        </div>
+
+        <div class="skill-tile reveal-up">
+          <span class="skill-num">02</span>
+          <h3 class="skill-name">Communication</h3>
+          <p class="skill-meta">Customer Handling & Relations</p>
+          <p class="skill-details">
+            Professional oral and written correspondence, active listening, dispute mitigation, and seamless corporate
+            client relations.
+          </p>
+          <div class="skill-meter"><span style="width: 95%;"></span></div>
+        </div>
+
+        <div class="skill-tile reveal-up">
+          <span class="skill-num">03</span>
+          <h3 class="skill-name">Target Delivery</h3>
+          <p class="skill-meta">Working Under Pressure</p>
+          <p class="skill-details">
+            Demonstrated stamina and composure during peak business hours, tight deadlines, and unexpected
+            administrative demands.
+          </p>
+          <div class="skill-meter"><span style="width: 88%;"></span></div>
+        </div>
+
+        <div class="skill-tile reveal-up">
+          <span class="skill-num">04</span>
+          <h3 class="skill-name">Data & Archiving</h3>
+          <p class="skill-meta">Document Management & Filing</p>
+          <p class="skill-details">
+            High-speed, error-free data entry, structured file management, strict confidentiality maintenance, and
+            physical record indexing.
+          </p>
+          <div class="skill-meter"><span style="width: 92%;"></span></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CONTACT SECTION ================= -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+
+      <div class="section-label-row reveal-up">
+        <span class="section-num">04</span>
+        <span class="section-tag-name">Inquiries & Correspondence</span>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Contact Information -->
+        <div class="contact-info-block reveal-up">
+          <h2 class="editorial-heading">Get in Touch</h2>
+          <p class="lead-text">
+            I am currently open to corporate opportunities, HR roles, and business management positions.
+            Feel free to contact me directly.
+          </p>
+
+          <div class="contact-details-list">
+            <div class="c-item">
+              <span class="c-label">Address</span>
+              <p class="c-val">Mehmoodabad 06, Karachi, Pakistan</p>
+            </div>
+
+            <div class="c-item">
+              <span class="c-label">Email Address</span>
+              <p class="c-val"><a href="mailto:rimshark736@gmail.com">rimshark736@gmail.com</a></p>
+            </div>
+
+            <div class="c-item">
+              <span class="c-label">Phone & WhatsApp</span>
+              <p class="c-val"><a href="tel:+923257915857">+92 3257915857</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Block -->
+        <div class="contact-form-block reveal-up">
+          <form id="contactForm" class="minimal-form" novalidate>
+            <div class="input-row">
+              <div class="input-field">
+                <label for="userName">Your Name</label>
+                <input type="text" id="userName" name="name" placeholder="John Doe" required>
+              </div>
+              <div class="input-field">
+                <label for="userPhone">Your Phone</label>
+                <input type="tel" id="userPhone" name="phone" placeholder="+92 300 0000000" required>
+              </div>
+            </div>
+
+            <div class="input-field">
+              <label for="userEmail">Your Email</label>
+              <input type="email" id="userEmail" name="email" placeholder="john@example.com" required>
+            </div>
+
+            <div class="input-field">
+              <label for="userMessage">Your Message</label>
+              <textarea id="userMessage" name="message" rows="4" placeholder="Write your inquiry or proposal..."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="submit-button" id="submitBtn">
+              <span>Send Message</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <div id="formFeedback" class="form-feedback"></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER (EXACTLY LIKE REFERENCE IMAGE 1) ================= -->
+  <!-- Clean white background, sleek geometric globe/star mark, metadata lines, and giant bleeding 'Portfolio' title -->
+  <footer class="awwwards-footer" id="footer">
+    <div class="footer-inner">
+
+      <!-- Top Metadata Header Block -->
+      <div class="footer-top-meta">
+
+        <!-- Minimal Wireframe Globe / Star SVG Icon (exactly like in image 1) -->
+        <div class="footer-icon-mark">
+          <svg width="38" height="38" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.6">
+            <ellipse cx="50" cy="50" rx="46" ry="18" />
+            <ellipse cx="50" cy="50" rx="18" ry="46" />
+            <circle cx="50" cy="50" r="46" />
+            <line x1="50" y1="4" x2="50" y2="96" />
+            <line x1="4" y1="50" x2="96" y2="50" />
+            <!-- center small 4-point star -->
+            <polygon points="50,44 52,48 56,50 52,52 50,56 48,52 44,50 48,48" fill="currentColor" stroke="none" />
+          </svg>
+        </div>
+
+        <div class="footer-date">09 Jan, 2026</div>
+        <h3 class="footer-presentation-title">Creative Presentation</h3>
+        <p class="footer-presenter">Presented By: Rimsha Kanwal</p>
+      </div>
+
+      <!-- Mid Metadata Row (Exactly as in Reference: Roles on Left / Version & Date on Right) -->
+      <div class="footer-sub-meta">
+        <div class="meta-disciplines">
+          <span>Business Administration</span>
+          <span class="meta-slash">/</span>
+          <span>HR Executive</span>
+          <span class="meta-slash">/</span>
+          <span>Banking Operations</span>
+        </div>
+
+        <div class="meta-numbers">
+          <span class="meta-v">Volume 01.</span>
+          <span class="meta-numeric-date">November 2026</span>
+        </div>
+      </div>
+
+      <!-- Giant Editorial Title Anchored to Bottom: 'Portfolio' -->
+      <div class="footer-giant-title-wrap">
+        <h2 class="footer-giant-title">Portfolio</h2>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Plain, Simple JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
